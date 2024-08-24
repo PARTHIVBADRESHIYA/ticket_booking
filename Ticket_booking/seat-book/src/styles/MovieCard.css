@@ -1,0 +1,139 @@
+/* MovieCard.css */
+.relative {
+    position: relative;
+}
+
+.slider-item-container {
+    position: relative;
+}
+
+.custom-slider-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(153, 153, 153);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    z-index: 10; /* Ensure buttons are above the slider */
+}
+
+.prev-slide-button {
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next-slide-button {
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-slider-button svg {
+    width: 18px;
+    height: 18px;
+    fill: #FFFFFF;
+}
+
+/* Media Queries for Responsiveness */
+
+/* On mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .custom-slider-button {
+       display: none;
+    }
+
+    .custom-slider-button svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .prev-slide-button {
+        left: -15px;
+    }
+
+    .next-slide-button {
+        right: -15px;
+    }
+
+    /* Adjust slider item padding and image height for mobile */
+    .slider-item-container {
+        padding: 4px; /* Adjust padding as needed */
+    }
+
+    .slider-item-container h2{
+        font-size: 1.6rem; /* Adjust font size as needed */
+    }
+
+    .p-2 {
+        padding: 8px;
+    }
+
+    .text-lg {
+        font-size: rem; /* Adjust font size as needed */
+    }
+    .book .button {
+        background-color: #007bff; /* Adjust background color */
+        color: #fff; /* Ensure text color is white */
+        font-size: 0.9rem; /* Adjust font size for mobile */
+        padding: 8px 12px; /* Adjust padding */
+        border-radius: 5% ; /* Make corners less rounded */
+        display: block;
+        width: auto; /* Adjust width to fit text */
+        margin-top: 4px; /* Adjust margin */
+        text-align: center; /* Center text */
+    }
+    .book {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+   
+}
+
+/* On tablets (between 481px and 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .custom-slider-button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .custom-slider-button svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .prev-slide-button {
+        left: -20px;
+    }
+
+    .next-slide-button {
+        right: -20px;
+    }
+
+    /* Adjust slider item padding and image height for tablets */
+    img {
+        height: 250px; /* Adjust height as needed */
+    }
+
+    .p-4 {
+        padding: 12px;
+    }
+
+    .text-xl {
+        font-size: 1.25rem; /* Adjust font size as needed */
+    }
+}
+
+
+@media (min-width: 280px) and (max-width: 350px) {
+    .book h2{
+      font-size: 1.3rem; /* Example font size */
+    }
+  }
